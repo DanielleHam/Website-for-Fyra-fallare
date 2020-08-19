@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fyra Fällare 🌲</title>
+</head>
+<body>
+    <header id="main-header">
+        <div id="header-continer">
+            <div class="logo-continer">
+                <a href="index.html" id="logo"><h1>Fyra Fällare</h1></a>
+            </div>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">    
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" class="menu-link" Home>Start</a></li>
+                <li><a href="index.html#info" class="menu-link" About>Om Oss</a></li>
+                <li><a href="galleri.html" class="menu-link" Home>Galleri</a></li>
+                <li><a href="contact.html" class="menu-link" Contact>Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="search-contianer"><input type="search" placeholder="Sök..."/> </div>
+        <label for="nav-toggle" class="toggle-lable"><span></span></label>
+        </div>
+    </header>
+    <input type="checkbox" id="toggle-menu">
+<section id="hero-section">
+    <div class="hero-text">
+        <h1 class="hero-title">Välkommen till Fyra&nbsp;Fällare</h1>
+        <p class="hero-paragraph">
+            Vi är ett nystartat företag, av fyra personer. Som håller på med trädfällning, skogsbruk och skogsvård.
+        </p>
+        <a href="#" class="läs-mer" id="länk1" >läs mer</a>
+    </div>
+</section>
+<main>
+    <article id="contact-continer"> 
+    <div class="contact-form">
+        <div>
+        <h2>Kontakta oss gärna</h2>
+        <p>Fyll i formuläret för att lättast komma i kontakt med oss! </p>
+        </div>
+
+        <form name="kontakta-oss" method="GET" action="contact.html">
+            <label for="förnamn, efternamn">Skriv ditt namn:</label><br>
+            <input type="text" id="förnamn" name="Förnamn" required placeholder="Förnamn">
+            <input type="text" id="efternamn" name="Efternamn" required placeholder="Efternamn"> <br>
+            <label for="Kontakt"> Kontakt uppgifter: </label> <br>
+            <input type="email" id="Kontakt" required placeholder="Email"> <br>
+            <label for="textbox">Ditt meddenade (max 1000tecken)</label> <br>
+            <textarea id="textbox" name="textbox" maxlength="1000"></textarea> <br>
+
+
+            <input type="submit" id="submit" value="Skicka meddelande">
+        </form>
+    </div>
+    </article> 
+</main>
+    <footer class="footer-container">
+        <div class="footer-box">&copy; Fyra Fällare 2020</div>
+        <div class="footer-box">Adress:<br>Trollvägen 10 <br> 140 50 Nynäshamn</div>
+    </footer>
+</body>
+</html>

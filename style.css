@@ -1,0 +1,510 @@
+/*generlla style*/
+* {
+    font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #b3ffb3;
+}
+
+/*Header*/
+#main-header {
+    position: fixed;
+    background-color: gray;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 20px 5%;
+}
+
+#header-continer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-continer {
+    padding: 0 20px;
+}
+
+#logo {
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu-link {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: backrund-color ease-in-out 0.4s, color ease-in-out 0.4s;
+}
+
+.menu-link:hover {
+    background-color: #ffffff;
+    color:black;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/*sök box*/
+.search-continer {
+    display: flex;
+    justify-content: flex-end;
+}
+input[type="search"] {
+    border-radius: 10px;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid white;
+    font-size: 18px;
+    width: 60%;
+    background-image: url("./zoom.svg");
+    background-repeat: no-repeat;
+    background-size: 22px auto;
+    background-position: 15px 50%;
+    background-color: white;
+    
+}
+
+input[type="search"]:hover {
+    background-color: white;
+}
+
+
+/*Hero områder*/
+#hero-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 255, 0, 0.5), rgba(51, 102, 255, 0.6)), url(daylight-forest-nature-park-589802.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: center;
+    color: black;
+    
+}
+
+.hero-title {
+    font-size: 45px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    
+}
+
+.hero-paragraph {
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+
+.läs-mer {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: gray;
+    padding: 5px 15px;
+    margin-top: 25px;
+    border-radius: 15px;
+    transition: backrund-color ease-in-out 0.5s, color ease-in-out 0,5s;
+}
+
+.läs-mer:hover {
+    background-color: #2985cc;
+    color: #0fd14d;
+}
+
+/*card section index*/
+.card-section {
+    width: 100%;
+    height: auto;
+    padding: 0 5%;
+}
+
+.card-continer1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: -150px auto 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    perspective: 5000px;
+}
+
+.card-continer2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1280px;
+    perspective: 5000px;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    height: 300px;
+    padding: 50px 20px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 47px solid #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+    transition: transform ease-in-out 1.3s height ease-in-out 1.3s border-bottom ease-in-out 1.3s;
+}
+
+.card-title {
+    margin: 10px auto;
+}
+
+.fa {
+    color: green;
+    font-size: 40px;
+}
+
+/*kanske ta bort? blir ganska konstigt*/
+.card:hover {
+    transform: scale(1.1, 1.1);
+    height: 500px;
+    border-bottom: 0;
+}
+
+/*info om personer*/
+.info {
+    width: 100%;
+    padding-top: 100px;
+}
+
+#border {
+    width: 100%;
+    background-color: gray;
+    height: 5px;
+}
+
+#inledning {
+    margin: 30px 80px;
+    text-align: center;
+}
+
+.info-person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+    padding: 30px 5%;
+    max-width: 1280px;
+}
+
+.info-image {
+    flex: 1;
+}
+
+.info-namn {
+    flex: 1;
+    text-align: center;
+}
+
+.info-text {
+    flex: 2;
+    text-align: center;
+    font-size: larger;
+}
+
+.round-image {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/*kontakt sidan*/
+
+#contact-continer {
+    background-color: #b3ffb3;
+    width: 100%;
+    padding: 20px 5%;
+    margin: -150px 0 0 0;
+}
+
+.contact-form {
+    text-align: center;
+    line-height: 40px;
+}
+
+/*fomuläret*/
+input:valid {    
+    border-color: 1px solid green;
+}
+
+input:invalid {
+    border-color: 2px solid red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea,
+select {
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form:after {
+    border-bottom: 3px solid #000;
+}
+
+form[name="kontakta-oss"] textarea {
+    resize: none;
+    width: 60%;
+    height: 200px;
+}
+form[name="kontakta-oss"] input[type="submit"] {
+    background-color: gray;
+    color:white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+form[name="kontakta-oss"] input[type="submit"]:hover {
+    background-color: #2985cc;
+    color: #0fd14d;
+}
+
+/*galleri*/
+
+.galleri-section {
+    width: 100%;
+    margin-top: -150px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.galleri {
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.galleri img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/*footer*/
+footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    background-color: grey;
+}
+
+.footer-box {
+    flex: 1;
+    color: white;
+    padding: 5px 5%;
+}
+
+/*hamburgar menu*/
+@media screen and (max-width: 800px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .toggle-lable {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .toggle-lable span,
+    .toggle-lable span::before,
+    .toggle-lable span::after {
+        display: block;
+        background: #ffffff;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        position: relative;
+        transition: all .5s ease-in-out;
+    }
+
+    .toggle-lable span::before,
+    .toggle-lable span::after {
+        position: absolute;
+        content: '';
+    }
+
+    .toggle-lable span::before {
+        bottom: 8px;
+    }
+
+    .toggle-lable span::after{
+        top: 8px;
+    }
+
+    #nav-toggle:checked ~ #menu {
+        transform: scale(1, 1);
+    }
+
+    #nav-toggle:checked ~ .toggle-lable span {
+        background: transparent;
+    }
+
+    #nav-toggle:checked ~ .toggle-lable span::before {
+        transform: rotate(-45deg);
+        bottom: 0;
+        background: #ffffff;
+    }
+
+    #nav-toggle:checked ~ .toggle-lable span::after {
+        transform: rotate(45deg);
+        top: 0;
+        background: #ffffff;
+    }
+
+    #nav-toggle:checked ~ #menu a {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #menu {
+        position: absolute;
+        background: gray;
+        top: 100%;
+        width: 100%;
+        text-align: left;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform .5s ease-in-out;
+    }
+
+    #main-header {
+        padding: 25px 0;
+    }
+    #menu > ul {
+        display: block;
+        list-style: none;
+    }
+
+    #menu li {
+        padding: 20px 20px 0 20px;
+        border-bottom: white solid 2px;
+    }
+
+    .menu-link {
+        border: none;
+        opacity: 0;
+        transition: opacity .15s ease-in-out, backgrund-color .4s ease-in-out, color .4s ease-in-out;
+    }
+}
+@media screen and (max-width: 900px){
+    .search-continer {
+        display: none;
+    }
+
+    input[type="search"] {
+        display: none;
+    }
+
+    .galleri-section {
+        display: grid;
+    }
+}
+/*Media allt annat*/
+@media screen and (max-width: 700px) {
+    .hero-title {
+        font-size: 25px ;
+    }
+    .hero-paragraph {
+        font-size: 15px;
+    }
+    .card-continer1, 
+    .card-continer2 {
+        display: grid;
+    }
+    .card-continer2 {
+        margin: 15px auto;
+    }
+    .card-continer1 {
+        margin: -100px auto 0 auto;
+    }
+    .footer-box {
+        flex: wrap;
+    }
+    .info-person {
+        display: block;
+    }
+    .round-image {
+        display: block;
+        margin: 5px auto;
+        height: 200px;
+        width: 200px;
+    }
+    #contact-continer {
+        margin-top: -100px;
+    }
+   
+}
